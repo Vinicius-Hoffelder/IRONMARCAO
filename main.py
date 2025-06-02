@@ -68,7 +68,8 @@ while True:
         posicaoXMissil = random.randint(0,800)
         velocidadeMissil += 1
         if velocidadeMissil < 10:
-          velocidadeMissil += 1  
+          velocidadeMissil += 1 
+        pontos += 1
 
 
     tela.fill(branco)
