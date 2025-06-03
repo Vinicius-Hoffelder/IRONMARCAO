@@ -66,9 +66,7 @@ while True:
         posicaoYmissil = -250
         pygame.mixer.Sound.play(missilSound)
         posicaoXMissil = random.randint(0,800)
-        velocidadeMissil += 1
-        if velocidadeMissil < 10:
-          velocidadeMissil += 1 
+        velocidadeMissil = min(velocidadeMissil + 1, 15)
         pontos += 1
 
 
