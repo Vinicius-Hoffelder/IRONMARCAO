@@ -29,6 +29,7 @@ pygame.mixer_music.play(-1)
 while True:
     tela.blit(fundoStart, (0,0))
     aguarde("Pressione qualquer tecla para iniciar o jogo")
+    aguarde(2)
 
 
     pygame.mixer.Sound.play(missilSound)
