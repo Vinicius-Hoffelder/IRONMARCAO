@@ -10,6 +10,7 @@ preto = (0, 0, 0)
 iron = pygame.image.load("assets/iron.png")
 fundoJogo = pygame.image.load("assets/fundoJogo.png")
 missil =pygame.image.load("assets/missil.png")
+fundoStart = pygame.image.load("assets/fundoStart.png")
 pontos = 0
 posicaoXIron = 275
 posicaoYIron = 400
@@ -26,6 +27,10 @@ pygame.mixer_music.play(-1)
 
 
 while True:
+    tela.blit(fundoStart, (0,0))
+    aguarde("Pressione qualquer tecla para iniciar o jogo")
+
+
     pygame.mixer.Sound.play(missilSound)
     eventos = pygame.event.get()
     for evento in eventos:
